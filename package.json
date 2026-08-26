@@ -11,7 +11,7 @@
     "migrate:prod": "wrangler d1 migrations apply tsrss-db"
   },
   "dependencies": {
-    "hono": "^4.7.0",
+    "hono": "^4.13.5",
     "rss-parser": "^3.13.0"
   },
   "devDependencies": {
