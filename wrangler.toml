@@ -30,7 +30,7 @@ crons = ["*/30 * * * *"]
 [vars]
 TSRSS_AUTH_MODE = "password"
 TSRSS_PURGE_DAYS = "30"
-TSRSS_VERSION = "vDev"
+TSRSS_VERSION = "v1"
 
 # ── Preview environment ──────────────────────────────────────────────────────
 
@@ -53,4 +53,4 @@ crons = []
 [env.preview.vars]
 TSRSS_AUTH_MODE = "password"
 TSRSS_PURGE_DAYS = "30"
-TSRSS_VERSION = "vDev"
+TSRSS_VERSION = "v1"
