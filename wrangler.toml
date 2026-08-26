@@ -3,6 +3,11 @@ main = "src/index.ts"
 compatibility_date = "2026-05-01"
 compatibility_flags = ["nodejs_compat"]
 
+# Serve TSRSS from the existing proxied apex domain without replacing DNS.
+routes = [
+  { pattern = "masbhd.com/*", zone_name = "masbhd.com" }
+]
+
 # Auto-serve static assets (JS, CSS, favicons, app.html)
 assets = { directory = "./src/public", binding = "ASSETS" }
 
@@ -10,12 +15,12 @@ assets = { directory = "./src/public", binding = "ASSETS" }
 [[d1_databases]]
 binding = "DB"
 database_name = "tsrss-db"
-database_id = "__D1_DATABASE_ID__"
+database_id = "4201c720-5954-417e-a330-8466920a7000"
 
 # KV namespace for password auth sessions
 [[kv_namespaces]]
 binding = "SESSIONS"
-id = "__KV_NAMESPACE_ID__"
+id = "d2424c767e23426688ffaca5103c9cf5"
 
 # Cron trigger: refresh all feeds every 30 minutes
 [triggers]
